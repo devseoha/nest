@@ -10,7 +10,7 @@
     "build": "nest build",
     "format": "prettier --write \\\"src/**/*.ts\\\" \\\"test/**/*.ts\\\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start:dev": "nest build --webpack --webpackPath webpack-hmr.config.js --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
@@ -24,9 +24,16 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^6.0.5",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "dotenv-webpack": "^8.0.0",
+    "express-basic-auth": "^1.2.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "run-script-webpack-plugin": "^0.1.1",
+    "rxjs": "^7.2.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
