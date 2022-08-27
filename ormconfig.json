@@ -1,0 +1,13 @@
+[
+  {
+    "name": "default",
+    "type": "mysql",
+    "host": "test-lane4-aurora.cluster-cjog7fnrqcmz.ap-northeast-2.rds.amazonaws.com",
+    "port": 3306,
+    "username": "lane4user",
+    "password": "lane4user1q2w3e4r%T",
+    "database": "",
+    "synchronize": false,
+    "entities": ["entities/*.js"]
+  }
+]
