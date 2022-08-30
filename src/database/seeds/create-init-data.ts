@@ -1,6 +1,6 @@
 import { Connection, getManager } from 'typeorm';
 import { Factory, Seeder } from 'typeorm-seeding';
-import { User } from '../entities/auth.entity';
+import { User } from '../entities/user.entity';
 
 export class CreateInitData implements Seeder {
   public async run(factory: Factory, connection: Connection): Promise<any> {
