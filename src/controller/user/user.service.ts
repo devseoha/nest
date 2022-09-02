@@ -4,7 +4,7 @@ import { UpdateAuthDto } from './dto/update-auth.dto';
 
 @Injectable()
 export class UserService {
-  create(createAuthDto: CreateAuthDto) {
-    return 'This action adds a new user';
+  async validateUser(email: string, password: string) {
+    return true;
   }
 }
